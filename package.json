@@ -1,0 +1,21 @@
+{
+  "name": "angular-indeepth",
+  "version": "1.0.0",
+  "description": "Learn in deepth of coding skill while reading angular book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tao Ning",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-myth": "^1.1.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.0"
+  }
+}

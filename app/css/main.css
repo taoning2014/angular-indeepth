@@ -1,0 +1,12 @@
+:root {
+	--green: #a6c776;
+	--red: #E8105C;
+}
+
+.done {
+	background-color: var(--green);
+}
+
+.pending {
+	background-color: var(--red);
+}

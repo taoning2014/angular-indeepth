@@ -1,0 +1,21 @@
+{
+  "name": "angular-indeepth",
+  "version": "0.0.0",
+  "authors": [
+    "Tao Ning <ningtaous@gmail.com>"
+  ],
+  "description": "Learn in deepth of coding skill while reading angular",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "normalize.css": "~3.0.3"
+  }
+}
