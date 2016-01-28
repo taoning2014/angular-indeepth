@@ -13,7 +13,11 @@
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-cssnano": "^2.1.0",
-    "gulp-myth": "^1.1.0"
+    "gulp-myth": "^1.1.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6"
   },
   "dependencies": {
     "gulp-concat": "^2.6.0"

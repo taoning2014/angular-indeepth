@@ -17,5 +17,9 @@
   "dependencies": {
     "angular": "~1.4.9",
     "normalize.css": "~3.0.3"
+  },
+  "devDependencies": {
+    "angular-route": "~1.4.9",
+    "angular-mocks": "~1.4.9"
   }
 }
