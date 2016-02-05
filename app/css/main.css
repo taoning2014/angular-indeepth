@@ -1,12 +1,25 @@
 :root {
-	--green: #a6c776;
-	--red: #E8105C;
+    --green: #a6c776;
+    --red: #E8105C;
+    --lightpik:#FFB6C1;
 }
 
 .done {
-	background-color: var(--green);
+    background-color: var(--green);
 }
 
 .pending {
-	background-color: var(--red);
+    background-color: var(--red);
+}
+
+.username.ng-valid {
+    background-color: var(--green);
+}
+
+.username.ng-dirty.ng-invalid-required {
+    background-color: var(--red);
+}
+
+.username.ng-dirty.ng-invalid-minlength {
+    background-color: var(--lightpik);
 }
