@@ -1,5 +1,16 @@
 app
-.controller('MainCtrl', [function() {
+  .config(['$routeProvider', function($routeProvider) {
+    $routeProvider.when('/', {
+        template: '<h5>This is the default route</h5>'
+      })
+      .when('/second', {
+        template: '<h5>This is the second route</h5>'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  }])
+.controller('MainCtrl', ['currencyFilter', 'filterFilter', function(currencyFilter, filterFilter) {
   this.notes = [{
     label: 'FC Todo',
     type: 'chore',
@@ -49,4 +60,6 @@ app
     }
   };
   this.currentFilter = 'string';
+
+  this.curNotes = filterFilter(this.notes, 'TT');
 }]);

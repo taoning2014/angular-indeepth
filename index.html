@@ -2,40 +2,49 @@
 <html ng-app='notesApp'>
 
 <head>
-    <link href='dist/all.css' rel='stylesheet'>
+  <link href='dist/all.css' rel='stylesheet'>
 </head>
 
-<body ng-controller='MainCtrl as ctrl'>
-    <button ng-click=ctrl.currentFilter='string'>
-      Filter with string
-    </button>
-    <button ng-click=ctrl.currentFilter='object'>
-      Filter with object
-    </button>
-    <button ng-click=ctrl.currentFilter='function'>
-      Filter with function
-    </button>
+<body>
 
-    Filter text
-    <input type='text'
-           ng-model="ctrl.filterOptions['string']">
-    Show Done only
-    <input type='checkbox'
-           ng-model="ctrl.filterOptions['object'].done">
-    <ul>
-      <li ng-repeat="note in ctrl.notes |
+  <h2> Test Routing </h2>
+
+  <ul>
+    <li><a href="#/">Default Route</a></li>
+    <li><a href="#/second">Second Route</a></li>
+    <li><a href="#/asdasdasd">Nonexistent Route</a></li>
+  </ul>
+  <div ng-view></div>
+
+  <!-- Test Something -->
+  <!-- <h2> {{ctrl.curNotes}} </h2>
+  <button ng-click=ctrl.currentFilter='string'>
+    Filter with string
+  </button>
+  <button ng-click=ctrl.currentFilter='object'>
+    Filter with object
+  </button>
+  <button ng-click=ctrl.currentFilter='function'>
+    Filter with function
+  </button>
+
+  Filter text
+  <input type='text' ng-model="ctrl.filterOptions['string']"> Show Done only
+  <input type='checkbox' ng-model="ctrl.filterOptions['object'].done">
+  <ul>
+    <li ng-repeat="note in ctrl.notes |
                     filter: ctrl.filterOptions[ctrl.currentFilter] |
                     orderBy: ctrl.sortOrder |
-                    limitTo: 10" >
+                    limitTo: 10">
       {{note.label}} - {{note.type}} - {{note.done}}
-      </li>
-    </ul>
-    <!-- libs -->
-    <script src='bower_components/angular/angular.min.js'>
-    </script>
-    <!-- js files -->
-    <script src='app/js/app.js'></script>
-    <script src='app/js/controllers/mainController.js'></script>
+    </li>
+  </ul> -->
+  <!-- libs -->
+  <script src='bower_components/angular/angular.min.js'></script>
+  <script src='bower_components/angular-route/angular-route.min.js'></script>
+  <!-- js files -->
+  <script src='app/js/app.js'></script>
+  <script src='app/js/controllers/mainController.js'></script>
 </body>
 
 </html>
