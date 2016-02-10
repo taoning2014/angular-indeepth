@@ -1,5 +1,5 @@
 # angular-indeepth
-
+test
 I devide my learning process into 4 parts.
 1. Read books and blogs. 
 2. Watch video tutorials and lectures from prestigious programmer.
