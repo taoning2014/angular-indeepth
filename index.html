@@ -28,9 +28,9 @@
     Filter with function
   </button>
 
-  Filter text
   <input type='text' ng-model="ctrl.filterOptions['string']"> Show Done only
   <input type='checkbox' ng-model="ctrl.filterOptions['object'].done">
+  Filter text
   <ul>
     <li ng-repeat="note in ctrl.notes |
                     filter: ctrl.filterOptions[ctrl.currentFilter] |
